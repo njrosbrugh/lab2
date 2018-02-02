@@ -164,9 +164,6 @@ public:
 			a->color[0] = (((float)rand() / (2*(float)RAND_MAX)) + 0.5);
 			a->color[1] = (((float)rand() / (2*(float)RAND_MAX)) + 0.5);
 			a->color[2] = (((float)rand() / (2*(float)RAND_MAX)) + 0.5);
-//			a->color[0] = 0.8;
-//			a->color[1] = 0.8;
-//			a->color[2] = 0.7;
 			a->vel[0] = (Flt)(rnd()*2.0-1.0);
 			a->vel[1] = (Flt)(rnd()*2.0-1.0);
 			//std::cout << "asteroid" << std::endl;
@@ -539,9 +536,6 @@ void buildAsteroidFragment(Asteroid *ta, Asteroid *a)
 	ta->color[0] = a->color[0];
 	ta->color[1] = a->color[1];
 	ta->color[2] = a->color[2];
-//	ta->color[0] = 0.8;
-//	ta->color[1] = 0.8;
-//	ta->color[2] = 0.7;
 	ta->vel[0] = a->vel[0] + (rnd()*2.0-1.0);
 	ta->vel[1] = a->vel[1] + (rnd()*2.0-1.0);
 }
